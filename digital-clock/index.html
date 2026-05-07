@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock - Multi Timezone</title>
+    <link rel="stylesheet" href="clock-style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🕐 Multi Timezone Digital Clock</h1>
+            <p>Real-time clock display across different time zones</p>
+        </header>
+
+        <div class="controls">
+            <label for="timezone-select">Add Timezone:</label>
+            <select id="timezone-select">
+                <option value="">-- Select Timezone --</option>
+                <option value="UTC">UTC (Coordinated Universal Time)</option>
+                <option value="America/New_York">America/New_York (EST)</option>
+                <option value="America/Chicago">America/Chicago (CST)</option>
+                <option value="America/Denver">America/Denver (MST)</option>
+                <option value="America/Los_Angeles">America/Los_Angeles (PST)</option>
+                <option value="Europe/London">Europe/London (GMT)</option>
+                <option value="Europe/Paris">Europe/Paris (CET)</option>
+                <option value="Europe/Tokyo">Europe/Tokyo (JST)</option>
+                <option value="Asia/Tokyo">Asia/Tokyo (JST)</option>
+                <option value="Asia/Shanghai">Asia/Shanghai (CST)</option>
+                <option value="Asia/Hong_Kong">Asia/Hong_Kong (HKT)</option>
+                <option value="Asia/Singapore">Asia/Singapore (SGT)</option>
+                <option value="Asia/Bangkok">Asia/Bangkok (ICT)</option>
+                <option value="Asia/Dubai">Asia/Dubai (GST)</option>
+                <option value="Asia/Kolkata">Asia/Kolkata (IST)</option>
+                <option value="Australia/Sydney">Australia/Sydney (AEDT)</option>
+                <option value="Australia/Melbourne">Australia/Melbourne (AEDT)</option>
+                <option value="Pacific/Auckland">Pacific/Auckland (NZDT)</option>
+            </select>
+            <button onclick="addClock()">Add Clock</button>
+            <button onclick="clearAllClocks()" class="clear-btn">Clear All</button>
+        </div>
+
+        <div class="clocks-container" id="clocks-container">
+            <!-- Clocks will be added here dynamically -->
+        </div>
+
+        <footer>
+            <p>© 2026 Digital Clock - Multi Timezone Display</p>
+        </footer>
+    </div>
+
+    <script src="clock-script.js"></script>
+</body>
+</html>
