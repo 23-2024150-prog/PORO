@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORO - プロセカゲーム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎵 PORO 🎵</h1>
+            <p>Project SEKAI Game Site</p>
+        </header>
+
+        <div class="game-section">
+            <div class="player-info">
+                <h2>プレイヤー情報</h2>
+                <p>スコア: <span id="score">0</span></p>
+                <p>コンボ: <span id="combo">0</span></p>
+                <p>HP: <span id="hp">100</span>%</p>
+            </div>
+
+            <div class="game-area">
+                <h3 id="songName">楽曲を選択してください</h3>
+                <div class="note-lane" id="noteLane"></div>
+            </div>
+
+            <div class="song-list">
+                <h2>楽曲一覧</h2>
+                <button class="song-btn" onclick="selectSong('Tell Your World', 'easy')">Tell Your World - EASY</button>
+                <button class="song-btn" onclick="selectSong('Hare Hare Yukai', 'normal')">Hare Hare Yukai - NORMAL</button>
+                <button class="song-btn" onclick="selectSong('World is Mine', 'hard')">World is Mine - HARD</button>
+                <button class="song-btn" onclick="selectSong('Senbonzakura', 'expert')">Senbonzakura - EXPERT</button>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button onclick="startGame()">ゲーム開始</button>
+            <button onclick="resetGame()">リセット</button>
+        </div>
+
+        <footer>
+            <p>© 2026 PORO - A Project SEKAI Fan Game</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
